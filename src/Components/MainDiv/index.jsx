@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InputField from "../InputField";
 import SearchButton from "../SearchButton";
+import HeadingTag from "../HeadingTag";
 
 
 import { ReactComponent as Humidity } from '../../assets/icons/humidity-icon.svg';
@@ -58,6 +59,7 @@ const MainDiv = () => {
 
     return (
         <div className="container">
+            <HeadingTag/>
           
             <div className="weather">
                 <div className="search">
@@ -78,13 +80,13 @@ const MainDiv = () => {
                     </div>
 
                     <div className="details">
-                        <div className="col">
+                        <d  iv className="col">
                             <Humidity />
                             <div className="humidity">
                                 <p>{Math.round(data.humidity)}%</p>
                                 <p>Humidity</p>
                             </div>
-                        </div>
+                        </d>
                         <div className="col">
                             <Wind />
                             <div className="wind">
@@ -101,6 +103,7 @@ const MainDiv = () => {
                 </div>
             </div>
         </div>
+        
     );
 };
 
