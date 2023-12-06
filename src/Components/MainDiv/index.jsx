@@ -3,7 +3,8 @@ import InputField from "../InputField";
 import SearchButton from "../SearchButton";
 import HeadingTag from "../HeadingTag";
 import Listitems from "../ListItems";
-
+import Sdata from "../Sdata";
+import CardListing from "../CardsListing";
 
 import { ReactComponent as Humidity } from '../../assets/icons/humidity-icon.svg';
 import { ReactComponent as Wind } from '../../assets/icons/wind-icon.svg';
@@ -57,6 +58,11 @@ const MainDiv = () => {
                 .catch(err => console.log(err));
         }
     };
+    const handleClickNew=(props)=>{
+        
+
+
+    }
 
     return (
         <div className="container">
@@ -88,17 +94,11 @@ const MainDiv = () => {
                             <Listitems value={data.speed} name ={"Wind"}/>
                             
                         </div>
-                        
-                           
-                            
-                        
 
-
-
-                        
                     </div>
                 </div>
             </div>
+            <CardListing cities={Sdata} onClick={handleClickNew}/>
         </div>
         
     );
