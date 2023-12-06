@@ -5,7 +5,7 @@
    
     margin: 0 auto;
     text-align: center;
-   // border: 10px groove white;
+   
     background-color: transparent;
     
 }
@@ -67,8 +67,7 @@
     display: flex;
     
     justify-content: space-between;
-    //padding: 0px 20px;
-    //margin-top: 50px;
+ 
 }
 .details .col{
     display: flex;
@@ -80,30 +79,17 @@
 }
 .details .col img{
     width: 45px;
-    //margin-right: 10px;
+    
 }
-.wind{
-    font-size: 27px;
-}
-.wind p{
-    margin: 0px;
-}
+
 
 
 body {
-    /* Set the background image */
+   
     background-image: url('../.././assets/images/pexels-johannes-plenio-1118873.jpg');
-
-    /* Set background size to cover the entire screen */
     background-size: cover;
-
-    /* Center the background image */
     background-position: center;
-
-    /* Fix the background image so it doesn't scroll with the content */
     background-attachment: fixed;
-
-    /* Set background to cover the entire viewport */
-    height: 100vh; /* Make sure the body takes up the full viewport height */
-    margin: 0; /* Remove default margin */
+    height: 100vh; 
+    margin: 0; 
 }
