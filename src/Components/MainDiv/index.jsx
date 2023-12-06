@@ -80,21 +80,22 @@ const MainDiv = () => {
                     </div>
 
                     <div className="details">
-                        <d  iv className="col">
+                        <div className="col">
                             <Humidity />
-                            <div className="humidity">
+                            <div className="wind">
                                 <p>{Math.round(data.humidity)}%</p>
                                 <p>Humidity</p>
                             </div>
-                        </d>
-                        <div className="col">
                             <Wind />
                             <div className="wind">
                                 <p>{Math.round(data.speed)}km/h</p>
                                 <p>Wind</p>
                             </div>
-                            
                         </div>
+                        
+                           
+                            
+                        
 
 
 
