@@ -6,7 +6,7 @@ function Card(props) {
     <>
       <div className="card">
         <img src={props.imgsrc} alt="sunImage" />
-        <button id="btn" onClick={props.onClick}>
+        <button id="btn" onClick={() => props.onClick(props.city)}>
         <h2>{props.city}</h2>
         
         </button>

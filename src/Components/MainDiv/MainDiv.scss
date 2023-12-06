@@ -1,3 +1,5 @@
+@import '../../assets/styles/colors.scss';
+
 .container{
     display: block;
     width: 90%;
@@ -15,7 +17,7 @@
     border-radius: 10px;
     margin: 2px auto;
     text-align: center;
-    color: white;
+    color: $__white_color;
 
 }
 .search{
@@ -29,7 +31,7 @@
     outline: 0;
     padding: 15px 25px;
     font-size: 18px;
-    background-color: white;
+    background-color: $__white_color;
     color: black;
     border-radius: 30px;
     flex: 1;

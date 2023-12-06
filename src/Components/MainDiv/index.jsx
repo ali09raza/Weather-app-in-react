@@ -58,11 +58,30 @@ const MainDiv = () => {
                 .catch(err => console.log(err));
         }
     };
-    const handleClickNew=(props)=>{
-        
+    const handleClickNew = (city) => {
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=21dd50f3e4449375457c0621c15be4b3&&units=metric`;
+        axios.get(apiUrl)
+            .then(res =>  {
+                let imagePath = '';
+                if (res.data.weather[0].main === "Clouds") {
+                    imagePath = CloudImage;
+                } else if (res.data.weather[0].main === "Rain") {
+                    imagePath = RainingImage;
+                } else {
+                    imagePath = SunImage;
+                }
 
-
-    }
+                setData({
+                    ...data,
+                    celcius: res.data.main.temp,
+                    name: res.data.name,
+                    humidity: res.data.main.humidity,
+                    speed: res.data.wind.speed,
+                    image: imagePath
+                });
+            })
+            .catch(err => console.log(err));
+    };
 
     return (
         <div className="container">
